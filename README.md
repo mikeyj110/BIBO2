@@ -3,6 +3,8 @@ This is a hub for things that I've found helpful when working with the BIBO Touc
 
 -------------------------------------------------
 ## Links
+  - [BIBO 3D Printer Facebook Group](https://www.facebook.com/groups/192868111095711)
+    - Facebook user group for BIBO 3D printer users
   - [Makerbase: MKS SGEN_L V1](https://github.com/makerbase-mks/SGEN_L)
     - Official Github for the standard board.
   - [MKS Tool](https://baizhongyun.cn/home/mkstoolview)
