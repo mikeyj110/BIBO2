@@ -3,17 +3,11 @@ This is a hub for things that I've found helpful when working with the BIBO Touc
 
 -------------------------------------------------
 ## Links
-  - Makerbase: MKS SGEN_L V1
+  - [Makerbase: MKS SGEN_L V1](https://github.com/makerbase-mks/SGEN_L)
     Official Github for the standard board.
-    ```
-    https://github.com/makerbase-mks/SGEN_L
-    ```
-  - MKS Tool
+  - [MKS Tool](https://baizhongyun.cn/home/mkstoolview)
     Tool to help build custom firmware.
-    ```
-    https://baizhongyun.cn/home/mkstoolview
-    ```
-
+    
 -------------------------------------------------
 ## Marlin Firmware Builds
   - Settings for build in Platformio.ini
