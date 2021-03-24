@@ -12,13 +12,13 @@ Tool to help build custom firmware.
 
 -------------------------------------------------
 ## Marlin Firmware Builds
-Settings for build in Platformio.ini
+  - Settings for build in Platformio.ini
     [platformio]
     src_dir      = Marlin
     boards_dir   = buildroot/share/PlatformIO/boards
     default_envs = LPC1768
     include_dir  = Marlin
-Motherboard settings for Configuration.h
+  - Motherboard settings for Configuration.h
     #ifndef MOTHERBOARD
       #define  MOTHERBOARD BOARD_MKS_SGEN_L   // BOARD_MKS_SGEN_L
     #endif
