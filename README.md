@@ -16,7 +16,7 @@ This is a hub for things that I've found helpful when working with the BIBO Touc
 ## Marlin Firmware Settings (MKS GEN_L V1 - Standard Board)
   -Settings for build in Platformio.ini
     ```
-    [platformio]
+    [ platformio]
     src_dir      = Marlin
     boards_dir   = buildroot/share/PlatformIO/boards
     default_envs = mega2560
@@ -32,7 +32,7 @@ This is a hub for things that I've found helpful when working with the BIBO Touc
 ## Marlin Firmware Builds (MKS SGEN_L V1 - 32-Bit Board)
   - Settings for build in Platformio.ini
     ```
-    [platformio]
+    [ platformio]
     src_dir      = Marlin
     boards_dir   = buildroot/share/PlatformIO/boards
     default_envs = LPC1768
