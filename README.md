@@ -17,7 +17,7 @@ This is a hub for things that I've found helpful when working with the BIBO Touc
 -------------------------------------------------
 ## Marlin Firmware Builds
   - Settings for build in Platformio.ini
-  ```
+    ```
     [platformio]
     src_dir      = Marlin
     boards_dir   = buildroot/share/PlatformIO/boards
