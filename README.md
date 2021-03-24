@@ -14,7 +14,7 @@ This is a hub for things that I've found helpful when working with the BIBO Touc
 -------------------------------------------------
 
 ## Marlin Firmware Settings (MKS GEN_L V1 - Standard Board)
-  -Settings for build in Platformio.ini
+  - Settings for build in Platformio.ini
     ```
     [ platformio]
     src_dir      = Marlin
