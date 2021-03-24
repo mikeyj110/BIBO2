@@ -14,10 +14,20 @@ This is a hub for things that I've found helpful when working with the BIBO Touc
 -------------------------------------------------
 
 ## Marlin Firmware Settings (MKS GEN_L V1 - Standard Board)
-  - Core - Arduino
-  - Motherboard - BOARD_MKS_GEN_L
-  - Name - MKS Gen L
-  - Pins - pins_MKS_GEN_L.h
+  -Settings for build in Platformio.ini
+    ```
+    [platformio]
+    src_dir      = Marlin
+    boards_dir   = buildroot/share/PlatformIO/boards
+    default_envs = mega2560
+    include_dir  = Marlin
+    ```
+  - Motherboard settings for Configuration.h
+    ```
+    #ifndef MOTHERBOARD
+      #define  MOTHERBOARD BOARD_MKS_GEN_L   // BOARD_MKS_GEN_L 
+    #endif
+    ```
 
 ## Marlin Firmware Builds (MKS SGEN_L V1 - 32-Bit Board)
   - Settings for build in Platformio.ini
