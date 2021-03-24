@@ -1,1 +1,17 @@
 ## M503 Report out from OctoPrint for 250000 Baudrate Firmware
+
+Send: M503
+Recv: echo:Steps per unit:
+Recv: echo:  M92 X100.00 Y100.00 Z400.00 E92.60
+Recv: echo:Maximum feedrates (mm/s):
+Recv: echo:  M203 X350.00 Y350.00 Z10.00 E25.00
+Recv: echo:Maximum Acceleration (mm/s2):
+Recv: echo:  M201 X1100 Y1100 Z100 E5000
+Recv: echo:Acceleration: S=acceleration, T=retract acceleration
+Recv: echo:  M204 S1100.00 T1100.00
+Recv: echo:Advanced variables: S=Min feedrate (mm/s), T=Min travel feedrate (mm/s), B=minimum segment time (ms), X=maximum XY jerk (mm/s),  Z=maximum Z jerk (mm/s),  E=maximum E jerk (mm/s)
+Recv: echo:  M205 S0.00 T0.00 B20000 X6.00 Z0.30 E5.00
+Recv: echo:Home offset (mm):
+Recv: echo:  M206 X0.00 Y0.00 Z0.00
+Recv: echo:PID settings:
+Recv: echo:   M301 P23.89 I1.37 D104.50
