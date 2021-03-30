@@ -623,11 +623,11 @@
 // Specify here all the endstop connectors that are connected to any endstop or probe.
 // Almost all printers will be using one per axis. Probes will use one or more of the
 // extra connectors. Leave undefined any used for non-endstop and non-probe purposes.
-#define USE_XMIN_PLUG   // Use actual Min Plug MJ
-#define USE_YMIN_PLUG   // Use actual Min Plug MJ
-#define USE_ZMIN_PLUG   // Use actual Min Plug MJ
-//#define USE_XMAX_PLUG
-//#define USE_YMAX_PLUG
+//#define USE_XMIN_PLUG   
+//#define USE_YMIN_PLUG   
+#define USE_ZMIN_PLUG   // MJ
+#define USE_XMAX_PLUG   // MJ
+#define USE_YMAX_PLUG   // MJ
 //#define USE_ZMAX_PLUG
 
 // Enable pullup for all endstops to prevent a floating state
@@ -657,11 +657,11 @@
 #endif
 
 // Mechanical endstop with COM to ground and NC to Signal uses "false" here (most common setup).
-#define X_MIN_ENDSTOP_INVERTING false
-#define Y_MIN_ENDSTOP_INVERTING false
+//#define X_MIN_ENDSTOP_INVERTING true  // false MJ
+//#define Y_MIN_ENDSTOP_INVERTING true  // false MJ
 #define Z_MIN_ENDSTOP_INVERTING true // false MJ
-// #define X_MAX_ENDSTOP_INVERTING true // false MJ
-// #define Y_MAX_ENDSTOP_INVERTING true // false MJ
+#define X_MAX_ENDSTOP_INVERTING true // false MJ
+#define Y_MAX_ENDSTOP_INVERTING true // false MJ
 // #define Z_MAX_ENDSTOP_INVERTING true // false MJ
 #define Z_MIN_PROBE_ENDSTOP_INVERTING true // false MJ
 
@@ -1111,15 +1111,15 @@
 
 //#define UNKNOWN_Z_NO_RAISE      // Don't raise Z (lower the bed) if Z is "unknown." For beds that fall when Z is powered off.
 
-#define Z_HOMING_HEIGHT  10 // 4 MJ      // (mm) Minimal Z height before homing (G28) for Z clearance above the bed, clamps, ...
+#define Z_HOMING_HEIGHT  5 // 4 MJ      // (mm) Minimal Z height before homing (G28) for Z clearance above the bed, clamps, ...
                                   // Be sure to have this much clearance over your Z_MAX_POS to prevent grinding.
 
 //#define Z_AFTER_HOMING  10      // (mm) Height to move to after homing Z
 
 // Direction of endstops when homing; 1=MAX, -1=MIN
 // :[-1,1]
-#define X_HOME_DIR -1
-#define Y_HOME_DIR -1
+#define X_HOME_DIR 1
+#define Y_HOME_DIR 1
 #define Z_HOME_DIR -1
 
 // @section machine
@@ -1129,12 +1129,12 @@
 #define Y_BED_SIZE 186 // 200 MJ
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
-#define X_MIN_POS -107 // 0 MJ
-#define Y_MIN_POS -93 // 0 MJ
+#define X_MIN_POS  -107 // 0 MJ
+#define Y_MIN_POS  -93 // 0 MJ
 #define Z_MIN_POS 0
-#define X_MAX_POS 141 // X_BED_SIZE MJ
-#define Y_MAX_POS 93 // Y_BED_SIZE MJ
-#define Z_MAX_POS 186 // 200 MJ
+#define X_MAX_POS  141 // X_BED_SIZE MJ
+#define Y_MAX_POS  93 // Y_BED_SIZE MJ
+#define Z_MAX_POS 186 + 4 // 200 MJ
 
 /**
  * Software Endstops
