@@ -1652,7 +1652,7 @@
  *
  * See https://marlinfw.org/docs/features/lin_advance.html for full instructions.
  */
-#define LIN_ADVANCE  // MJ
+// #define LIN_ADVANCE
 #if ENABLED(LIN_ADVANCE)
   //#define EXTRA_LIN_ADVANCE_K // Enable for second linear advance constants
   #define LIN_ADVANCE_K 0 // 0.22 MJ    // Unit: mm compression per 1mm/s extruder speed
@@ -1890,19 +1890,21 @@
 
 // The number of linear moves that can be in the planner at once.
 // The value of BLOCK_BUFFER_SIZE must be a power of 2 (e.g. 8, 16, 32)
-#if BOTH(SDSUPPORT, DIRECT_STEPPING)
-  #define BLOCK_BUFFER_SIZE  8
-#elif ENABLED(SDSUPPORT)
-  #define BLOCK_BUFFER_SIZE 16
-#else
-  #define BLOCK_BUFFER_SIZE 16
-#endif
+// #if BOTH(SDSUPPORT, DIRECT_STEPPING)
+//   #define BLOCK_BUFFER_SIZE  32 // 64 // 8 MJ
+// #elif ENABLED(SDSUPPORT)
+//   #define BLOCK_BUFFER_SIZE 64 // 128 // 16 MJ
+// #else
+//   #define BLOCK_BUFFER_SIZE 64 // 128 // 16 MJ
+// #endif
+#define BLOCK_BUFFER_SIZE 64 // 16 MJ
+
 
 // @section serial
 
 // The ASCII buffer for serial input
 #define MAX_CMD_SIZE 96
-#define BUFSIZE 4
+#define BUFSIZE 4 // breaks connection! MJ
 
 // Transmission to Host Buffer Size
 // To save 386 bytes of PROGMEM (and TX_BUFFER_SIZE+3 bytes of RAM) set to 0.
@@ -1911,7 +1913,7 @@
 // For debug-echo: 128 bytes for the optimal speed.
 // Other output doesn't need to be that speedy.
 // :[0, 2, 4, 8, 16, 32, 64, 128, 256]
-#define TX_BUFFER_SIZE 0
+#define TX_BUFFER_SIZE 32 // 0 MJ
 
 // Host Receive Buffer Size
 // Without XON/XOFF flow control (see SERIAL_XON_XOFF below) 32 bytes should be enough.
